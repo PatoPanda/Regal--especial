@@ -1,0 +1,47 @@
+body {
+    background-color: #000000; /* Fondo negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.heart-btn {
+    font-size: 80px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.latir {
+    animation: heartbeat 0.8s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Estilo para las frases que aparecerán */
+#frases-texto {
+    font-size: 20px;
+    height: 30px;
+    color: #ff4d6d; /* Color rosa/rojo para que resalte en el negro */
+    text-shadow: 0 0 10px #ff4d6d;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#youtube-player {
+    display: none;
+}
